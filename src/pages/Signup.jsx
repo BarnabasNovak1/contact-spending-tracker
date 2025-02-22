@@ -19,26 +19,24 @@ export default function Signup() {
   };
 
   return (
-    <div className="signup-container container">
+    <div>
       <h2>Sign Up</h2>
       <form onSubmit={handleSignup}>
         <input
           type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
-          className="input-field"
         />
         <input
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
-          className="input-field"
         />
-        <button type="submit" className="signup-button">Sign Up</button>
+        <button type="submit">Sign Up</button>
       </form>
       <p>
-        Already have an account? <a href="/login" className="login-link">Login</a>
-      </p>
+  Already have an account? <a href="/login">Login</a> 
+</p>
     </div>
   );
 }
