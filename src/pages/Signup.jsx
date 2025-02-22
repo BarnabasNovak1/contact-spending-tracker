@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";  // Import Link for React Router
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -37,7 +38,8 @@ export default function Signup() {
         <button type="submit" className="signup-button">Sign Up</button>
       </form>
       <p>
-        Already have an account? <a href="/login" className="login-link">Login</a>
+        Already have an account?{" "}
+        <Link to="/login" className="login-link">Login</Link>
       </p>
     </div>
   );
