@@ -26,16 +26,18 @@ export default function Login() {
           type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          className="input-field"
         />
         <input
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
+          className="input-field"
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
       <p>
-        Don't have an account? <a href="/signup">Sign Up</a>
+        Don't have an account? <a href="/signup" className="sign-up-link">Sign Up</a>
       </p>
     </div>
   );
