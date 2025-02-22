@@ -1,0 +1,259 @@
+/* Global Styles */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px; /* Increased width for laptop screens */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 15px 30px; /* Increased padding for navbar */
+  border-radius: 8px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 24px;
+  margin-right: 20px; /* Added more space between links */
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: rgb(208, 208, 208);
+  font-size: 18px; /* Larger font for logout button */
+  cursor: pointer;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input {
+  background: #2c2c2c;
+  border: 1px solid #444;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin-bottom: 15px; /* More space between inputs */
+  border-radius: 8px;
+  font-size: 16px; /* Larger input text for better readability */
+  width: 100%;
+  max-width: 500px; /* Limit width of inputs */
+}
+
+button {
+  background-color: rgb(208, 208, 208);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 20px; /* Increased button size */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Larger button text */
+  width: 100%;
+  max-width: 500px; /* Limit width of buttons */
+}
+
+/* Contact Card */
+.contact-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px; /* Wider card for larger screen */
+}
+
+.contact-card span {
+  font-size: 22px; /* Increased font size for name */
+  font-weight: bold;
+}
+
+.contact-card .last-contact {
+  font-size: 18px; /* Larger font size for last contact time */
+  color: #bbb;
+}
+
+.settings-panel {
+  margin-top: 20px;
+  padding: 15px;
+  background: #555555;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 900px; /* Wider panel */
+}
+
+/* Settings Panel */
+.settings-panel input,
+.settings-panel select {
+  padding: 12px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.settings-panel button {
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: green;
+}
+
+/* Delete Contact Button Inside Settings */
+.delete-contact-btn {
+  background-color: rgb(251, 251, 251);
+  color: rgb(129, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Hover Effects */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: rgb(126, 126, 126); /* background color for input fields */
+  border: 1px solid #9d9d9d;
+  font-size: 16px;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(221, 221, 221); /* background color for the button */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: rgb(111, 111, 111); /* Slightly darker on hover */
+}
+
+/* Sign up link styling */
+.sign-up-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sign-up-link:hover {
+  color: rgb(111, 111, 111); /* Change to the same background color on hover */
+}
+
+
+h2 {
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: rgb(208, 208, 208); /* background color for input fields */
+  border:rgb(221, 221, 221) solid #ccc;
+  font-size: 16px;
+}
+
+/* Button styling */
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(208, 208, 208); /* background color for the button */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: rgb(111, 111, 111); /* Slightly darker on hover */
+}
+
+/* Login link styling */
+.login-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: rgb(111, 111, 111); /* Change to the same background color on hover */
+}
